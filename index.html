@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -36,10 +36,9 @@ $(document).ready(function(){
 #panel, #flip {
     padding: 5px;
     text-align: center;
-    background-color: white;
+    background-color: grey;
     
 }
-
 #panel {
     padding: 10px;
     display: none;
@@ -48,15 +47,48 @@ $(document).ready(function(){
 </head>
 <body>
  
-<div id="flip">Name</div>
-<div id="panel"><p style="font-family:comic sans ms;font-size:160%;color:#566573;text-align:center;">李秉晨</p></div>
+<div id="flip" ><h3 style="color:#E6E6E6;font-family:comic sans ms;font-size:180%;text-align:center;">Name:</h3></div>
+<div id="panel"><p style="font-family:comic sans ms;font-size:160%;color:black;text-align:center;">李秉晨</p></div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+});
+</script>
+</head>
+<body>
 
+<h3 style="color:#E6E6E6;font-family:comic sans ms;font-size:180%;background-color:grey;text-align:center;">Hobbies:</h3>
 
-<h3 style="color:#E6E6E6;font-family:comic sans ms;font-size:180%;text-align:center;">Hobbies:</h3>
-<p style="font-family:comic sans ms;font-size:140%;color:#566573;text-align:center;">Badminton, Movies, Food and Music</p>
-<h3 style="color:#E6E6E6;font-family:comic sans ms;font-size:180%;text-align:center;">University:</h3>
-<p style="font-family:comic sans ms;font-size:140%;color:#566573;text-align:center;">Fu Jen Catholic University</p>
+<button>展開</button><br><br>
+
+<div id="div1" style="width:120px;height:129px;display:none;background-color:grey;font-family:comic sans ms;font-size:140%;color:black;text-align:center;">Badminton, Movies, Food and Music</div><br>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+
+<h3 style="color:#E6E6E6;font-family:comic sans ms;background-color:grey;font-size:180%;text-align:center;">University:</h3>
+<p style="font-family:comic sans ms;font-size:140%;background-color:grey;color:black;text-align:center;">Fu Jen Catholic University</p>
+<button id="hide">隱藏</button>
+<button id="show">顯示</button>
+
+</body>
 
 </body>
 </html>
